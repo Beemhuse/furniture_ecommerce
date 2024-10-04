@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* This is the style for the header */
+.heading{
+    font-size: 60px;
+    color: green;
+}
+
+
+/* This is the style for the  */
+
+.subheading{
+    font-size: 50px;
+    color: green;
+}
+
+.card{
+    border: 1px solid;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 50%;
+    margin: auto;
+}
+
+.card h2{
+    font-size: 25px;
+    color: blue;
+}
+.card >p{
+    margin-top: 40px;
+}
+
+
+

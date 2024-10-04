@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  .button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #2ecc71;
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    transition: width 0.5s, background-color 0.3s ease-in-out;
+  }
+
+  .box:hover {
+    width: 200px;
+    background-color: #e74c3c;
+  }
+      /* Basic styling for the nav */
+      .nav {
+      display: flex;
+      gap: 20px;
+      background-color: #f4f4f4;
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Nav item style */
+    .nav-item {
+      padding: 10px 20px;
+      /* background-color: #3498db; */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Applying transition to background and transform */
+    }
+
+    /* Hover state with transition */
+    .nav-item:hover {
+      background-color: #2ecc71; /* Changes background color smoothly */
+      transform: scale(1.1); /* Slightly increases the size */
+    }
+
+    /* Active nav item */
+    .nav-item.active {
+      background-color: #e74c3c;
+    }
+    .container{
+      border: solid red;
+    }
+    .container>.item{
+      padding: 20px;
+      margin: 10px;
+      width: 200px;
+      text-align: center;
+      background-color: #f4f4f4;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .one{
+      position: relative;
+      z-index: 1000;
+      /* height: 40vh; */
+      border: solid blue;
+
+    }
+    .two{
+      position: relative;
+      top: -30px;
+      left: 30px;
+      border: solid blue;
+
+    }
+    .three{
+      position: relative;
+      top: -60px;
+      left: 60px;
+      border: solid green;
+      z-index: -100;
+    }
+
+</style>
+<body>
+
+   <!-- Navigation bar -->
+   <nav class="nav">
+    <!-- <hr class="" /> -->
+    <a href="#" class="nav-item">Home</a>
+    <a href="#" class="nav-item active">About</a>
+    <a href="#" class="nav-item">Services</a>
+    <a href="#" class="nav-item">Contact</a>
+  </nav>
+  <div class="box"></div>
+
+  <button class="button">Hover Me</button>
+
+<div class="container">
+  <div class="item one">One</div>
+  <div class="item two">Two</div>
+  <div class="item three">Three</div>
+</div>
+
+</body>
+</html>
